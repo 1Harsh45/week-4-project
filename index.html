@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div id="welcome-screen">
+            <h1>Welcome to the Quiz!</h1>
+            <button id="start-quiz-btn">Start Quiz</button>
+        </div>
+        <div id="quiz-screen" class="hidden">
+            <div class="quiz-header">
+                <div id="timer">Time: 30</div>
+                <div id="score">Score: 0</div>
+            </div>
+            <div id="question-container">
+                <div id="question-number">Question 1</div>
+                <div id="question-text">What is the capital of France?</div>
+                <div id="options-container">
+                </div>
+            </div>
+            <button id="submit-btn">Submit</button>
+        </div>
+        <div id="result-screen" class="hidden">
+            <h2>Your Score is <span id="final-score"></span></h2>
+            <button id="retry-btn">Try Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
